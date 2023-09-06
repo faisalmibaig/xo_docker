@@ -2,4 +2,4 @@
 
 **Build Instructions:**
 
-Copy and navigate into the "build_files" folder and run `docker build . -t <tag_name>`
+Copy and navigate into the "build_files" folder and run `docker build . -t local/xo:1.0`
