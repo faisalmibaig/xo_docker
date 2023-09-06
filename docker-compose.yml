@@ -1,0 +1,32 @@
+---
+version: "3"
+
+services:
+  xo:
+    image: local/xo:1.0
+    container_name: xo
+    environment:
+      - TZ=America/Toronto
+    volumes:
+      - ./config:/etc/xo-server
+    networks:
+     - xo_network
+    ports:
+      - 80:80
+      - 443:433
+    restart: unless-stopped
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7.2.0-bookworm
+    container_name: xo_redis
+    environment:
+      - TZ=America/Toronto
+    networks:
+      - xo_network
+
+networks:
+  xo_network:
+    driver: bridge
+    name: xo_network
