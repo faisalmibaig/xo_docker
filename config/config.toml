@@ -164,7 +164,7 @@ key = './orchestra_key.pem'
 #uri = 'redis://redis.company.lan/42'
 
 # uri to redis container
-uri = 'redis://xo_redis:6379'
+uri = 'redis://xo_redis:6379/0'
 
 # List of aliased commands.
 #
