@@ -42,7 +42,3 @@ ln -s /xen-orchestra/packages/xo-server-transport-slack /usr/local/lib/node_modu
 ln -s /xen-orchestra/packages/xo-server-transport-xmpp /usr/local/lib/node_modules/
 ln -s /xen-orchestra/packages/xo-server-usage-report /usr/local/lib/node_modules/
 ln -s /xen-orchestra/packages/xo-server-web-hooks /usr/local/lib/node_modules/
-
-#default credentials:
-#user: admin@admin.net
-#password: admin
