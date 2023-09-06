@@ -7,6 +7,8 @@ Clone the repository and navigate into the "build_files" folder. Run `docker bui
 Once the build is complete, generate self-signed certificates in the "config" folder.
 `openssl req -x509 -newkey rsa:4096 -keyout orchestra_key.pem -out orchestra_cert.pem -days 3650 -nodes -subj '/CN=orchestra.local'`
 
+Navigate back to the folder containing the "docker-compose.yml" file and run `docker compose up -d`
+
 Default Credentials to the web UI:
 user: admin@admin.net
 password: admin
