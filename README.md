@@ -9,8 +9,8 @@ Once the build is complete, generate self-signed certificates in the "config" fo
 
 Navigate back to the folder containing the "docker-compose.yml" file and run `docker compose up -d`
 
-Default Credentials to the web UI:
-user: admin@admin.net
+Default Credentials to the web UI:\
+user: admin@admin.net\
 password: admin
 
 **Disclaimer: Data is not persistant and all data will be lost on container reboot**
