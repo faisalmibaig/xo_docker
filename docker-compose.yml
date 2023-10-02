@@ -23,6 +23,8 @@ services:
     container_name: xo_redis
     environment:
       - TZ=America/Toronto
+    volumes:
+      - ./redis_data:/data
     networks:
       - xo_network
 
