@@ -105,9 +105,9 @@ port = 80
 # # https://nodejs.org/docs/latest/api/tls.html#tls.createServer
 # #
 # # The only difference is the presence of the certificate and the key.
-[[http.listen]]
+# [[http.listen]]
 # #hostname = '127.0.0.1'
-port = 443
+# port = 443
 #
 # # Whether to autogenerate a self signed certificate if the `cert` or `key`
 # # files could not be found.
@@ -125,7 +125,7 @@ port = 443
 # # certificate authority up to the root.
 # #
 # # Default: undefined
-cert = './orchestra_cert.pem'
+# cert = './certificate.pem'
 #
 # # File containing the private key (PEM format).
 # #
@@ -133,7 +133,7 @@ cert = './orchestra_cert.pem'
 # # server startup.
 # #
 # # Default: undefined
-key = './orchestra_key.pem'
+# key = './key.pem'
 
 # List of files/directories which will be served.
 [http.mounts]
