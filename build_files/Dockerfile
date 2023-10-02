@@ -7,4 +7,4 @@ RUN     bash orchestra_setup.sh && \
         apt-get -y autoclean
 WORKDIR /xen-orchestra/packages/xo-server
 CMD     yarn start
-EXPOSE  443 80
+EXPOSE  80
