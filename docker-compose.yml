@@ -12,8 +12,7 @@ services:
     networks:
      - xo_network
     ports:
-      - 80:80
-      - 443:433
+      - 80:80  # Remove if proxied via nginx docker connected to the same network
     restart: unless-stopped
     depends_on:
       - redis
